@@ -68,3 +68,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+**Debouncing:**
+
+typing slow = 300ms
+typing fast = 30ms
+
+# Performance with debouncing
+
+        consider we're searching for 14 letters String in search box and simi
+        -liary 1000 people doing same thing
+
+        if there is debouncing i.e. skipping some of the api calls while typing
+        so fast then it may lead to skipping of many api calls and hence increase the performance of the app(or search function in app)
+
+        to give better user experience websites give search suggestion after making api calls for each letter
+
