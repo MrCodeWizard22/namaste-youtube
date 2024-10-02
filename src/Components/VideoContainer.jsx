@@ -17,10 +17,10 @@ export const VideoContainer = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+    <div className="flex flex-wrap justify-start p-4 gap-1">
       {videos.map((video) => (
-        <Link to={"/watch?v=" + video?.id}>
-          <VideoCard data={video} key={video?.id} />
+        <Link to={"/watch?v=" + video?.id} key={video?.id} className="flex-shrink-0">
+          <VideoCard data={video} />
         </Link>
       ))}
     </div>

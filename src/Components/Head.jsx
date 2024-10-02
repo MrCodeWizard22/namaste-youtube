@@ -2,6 +2,7 @@ import React from "react";
 import { Logo_url } from "../utils/Constants";
 import { useDispatch } from "react-redux";
 import { toggleMenu } from "../utils/AppSlice";
+import { Link } from "react-router-dom";
 
 export const Head = () => {
   const dispatch = useDispatch();
@@ -17,7 +18,9 @@ export const Head = () => {
           className="h-8 my-3 mx-4 cursor-pointer"
           onClick={handleClick}
         />
-        <img src={Logo_url} alt="Logo" className="h-14" />
+      <Link to="/">
+          <img src={Logo_url} alt="Logo" className="h-14 cursor-pointer" />
+          </Link>
       </div>
 
       <div className="flex items-center justify-center col-span-8">

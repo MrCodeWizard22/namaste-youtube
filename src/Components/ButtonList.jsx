@@ -12,7 +12,7 @@ const ButtonList = () => {
     "History",
     "India",
     "physics",
-    "romantic",
+   
     "belief",
     "media",
     "ben10",

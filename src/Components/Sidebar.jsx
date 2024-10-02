@@ -6,15 +6,15 @@ const Sidebar = () => {
 
   if (!isMenuOpen) return null;
   return (
-    <div className="shadow-lg">
-      <h1>Home</h1>
-      <h1>Shorts</h1>
-      <h1>Subscription</h1>
-      <h1 className="font-bold">You</h1>
-      <h1>Your channel</h1>
-      <h1>History</h1>
-      <h1>Playlist</h1>
-      <h1>Your videos</h1>
+    <div className="w-64 h-full bg-gray-100 shadow-lg p-4">
+      <h1 className="text-lg font-semibold mb-4">Home</h1>
+      <h1 className="text-lg font-semibold mb-4">Shorts</h1>
+      <h1 className="text-lg font-semibold mb-4">Subscription</h1>
+      <h1 className="text-lg font-bold text-blue-500 mb-4">You</h1>
+      <h1 className="text-lg font-semibold mb-4">Your channel</h1>
+      <h1 className="text-lg font-semibold mb-4">History</h1>
+      <h1 className="text-lg font-semibold mb-4">Playlist</h1>
+      <h1 className="text-lg font-semibold mb-4">Your videos</h1>
     </div>
   );
 };

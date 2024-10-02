@@ -24,11 +24,10 @@ function App() {
   ]);
 
   return (
-    <Provider store={Store}>
-      <div className="">
-        <Head />
-        <RouterProvider router={appRouter} />
-      </div>
+   <Provider store={Store}>
+ 
+      <RouterProvider router={appRouter}>
+      </RouterProvider>
     </Provider>
   );
 }
